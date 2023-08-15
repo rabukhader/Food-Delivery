@@ -1,0 +1,9 @@
+{
+    "title": "Food Delivery",
+    "heading1":"Top Resturant",
+    "subHeading1":"Orderd by Nearby first",
+    "heading2":"Trending This Week",
+    "subHeading2":"Double click on the food to add it to the cart",
+    "searchHint": "Search for Resturants or foods"
+
+}
