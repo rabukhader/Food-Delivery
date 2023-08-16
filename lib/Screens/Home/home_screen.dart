@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
             subHead: S.of(context).subHeading2,
             subIcon: Icons.trending_up,
           ),
-          const SmallCardCarousel(),
+          Expanded(child: const SmallCardCarousel()),
         ],
       ),
       bottomNavigationBar: const BottomBar(),

@@ -22,7 +22,7 @@ class BigCardCarousel extends StatelessWidget {
   }
 }
 
-Widget mycard(SmallCarouselData data) {
+Widget mycard(BigCarouselData data) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: 7),
     margin: const EdgeInsets.symmetric(horizontal: 9),
@@ -34,72 +34,78 @@ Widget mycard(SmallCarouselData data) {
       color: const Color.fromARGB(13, 56, 50, 50),
       child: Column(
         children: <Widget>[
-          Container(
-            width: 300,
-            height: 140,
-            decoration: BoxDecoration(
-                borderRadius:
-                    const BorderRadius.vertical(top: Radius.circular(15)),
-                image: DecorationImage(
-                    image: AssetImage(data.imageName), fit: BoxFit.fill)),
+          Expanded(
+            child: Container(
+              width: 300,
+              height: 140,
+              decoration: BoxDecoration(
+                  borderRadius:
+                      const BorderRadius.vertical(top: Radius.circular(15)),
+                  image: DecorationImage(
+                      image: AssetImage(data.imageName), fit: BoxFit.fill)),
+            ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: ListTile(
-              title: Text(
-                data.title,
-                softWrap: false,
-                style: const TextStyle(color: Colors.white),
-              ),
-              subtitle: Column(
-                children: [
-                  Text(
-                    data.subTitle,
-                    softWrap: false,
-                    style: const TextStyle(
-                        color: Color.fromARGB(157, 255, 255, 255)),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
-                    alignment: Alignment.topLeft,
-                    child: RatingBar.builder(
-                        itemSize: 22,
-                        initialRating: data.rating,
-                        minRating: 1,
-                        direction: Axis.horizontal,
-                        allowHalfRating: true,
-                        itemCount: 5,
-                        itemPadding:
-                            const EdgeInsets.symmetric(horizontal: 1.0),
-                        itemBuilder: (context, _) => const Icon(
-                              Icons.star,
-                              color: Colors.amber,
-                            ),
-                        onRatingUpdate: (rating) {}),
-                  ),
-                ],
-              ),
-              trailing: SizedBox(
-                width: 70,
-                height: 130,
-                child: Column(
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: ListTile(
+                title: Text(
+                  data.title,
+                  softWrap: false,
+                  style: const TextStyle(color: Colors.white),
+                ),
+                subtitle: Column(
                   children: [
-                    Container(
-                        decoration: BoxDecoration(
-                            color: or, borderRadius: BorderRadius.circular(8)),
-                        width: 70,
-                        height: 40,
-                        child: const Icon(
-                          Icons.directions,
-                          color: Colors.black,
-                        )),
-                    const Text(
-                      "8888.666",
+                    Text(
+                      data.subTitle,
                       softWrap: false,
-                      style:
-                          TextStyle(color: Color.fromARGB(148, 255, 255, 255)),
-                    )
+                      style: const TextStyle(
+                          color: Color.fromARGB(157, 255, 255, 255)),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      alignment: Alignment.topLeft,
+                      child: RatingBar.builder(
+                          itemSize: 22,
+                          initialRating: data.rating,
+                          minRating: 1,
+                          direction: Axis.horizontal,
+                          allowHalfRating: true,
+                          itemCount: 5,
+                          itemPadding:
+                              const EdgeInsets.symmetric(horizontal: 1.0),
+                          itemBuilder: (context, _) => const Icon(
+                                Icons.star,
+                                color: Colors.amber,
+                              ),
+                          onRatingUpdate: (rating) {}),
+                    ),
                   ],
+                ),
+                trailing: SizedBox(
+                  width: 70,
+                  height: 130,
+                  child: Column(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                              color: or, borderRadius: BorderRadius.circular(8)),
+                          width: 70,
+                          height: 40,
+                          child: const Icon(
+                            Icons.directions,
+                            color: Colors.black,
+                          )),
+                      const Expanded(
+                        child: Text(
+                          "8888.666",
+                          softWrap: false,
+                          style:
+                              TextStyle(color: Color.fromARGB(148, 255, 255, 255)),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),

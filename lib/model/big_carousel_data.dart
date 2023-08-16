@@ -1,10 +1,10 @@
-class BigCarouselData {
+class SmallCarouselData {
   final String title;
   final String subTitle;
   final String imageName;
   final String price;
 
-  BigCarouselData(
+  SmallCarouselData(
     this.title,
     this.subTitle,
     this.imageName,
@@ -12,9 +12,9 @@ class BigCarouselData {
   );
 }
 
-List<BigCarouselData> bigDataList = [
-  BigCarouselData("American Fried ","The Lonesome", "assets/first_resturant.jpg", "11.00"),
-  BigCarouselData("Calas","Home Cooking", "assets/second_resturant.jpg", "15.00"),
-  BigCarouselData("Pizza Margherita","Home Cooking ", "assets/first_resturant.jpg", "8.00"),
-  BigCarouselData("Pizza Italiano","Home Cooking", "assets/second_resturant.jpg", "20.00"),
+List<SmallCarouselData> bigDataList = [
+  SmallCarouselData("American Fried ","The Lonesome", "assets/first_resturant.jpg", "11.00"),
+  SmallCarouselData("Calas","Home Cooking", "assets/second_resturant.jpg", "15.00"),
+  SmallCarouselData("Pizza Margherita","Home Cooking ", "assets/first_resturant.jpg", "8.00"),
+  SmallCarouselData("Pizza Italiano","Home Cooking", "assets/second_resturant.jpg", "20.00"),
 ];

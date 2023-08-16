@@ -25,6 +25,8 @@ class CustomizedAppBar extends StatelessWidget {
         elevation: 0,
         backgroundColor: bg,
         title: Text(
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis ,
           title,
           style: TextStyle(letterSpacing: 1.5, color: or, fontWeight: FontWeight.w700),
         ),
