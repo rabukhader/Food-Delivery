@@ -6,10 +6,11 @@ class EachTile extends StatelessWidget {
       {super.key,
       required this.tileIcon,
       required this.tileHeader,
-      this.select = false});
+      this.select = false, required this.goTo});
   final IconData tileIcon;
   final String tileHeader;
   final bool? select;
+  final String goTo;
 
   bool get isSelect {
     return select ?? false;
@@ -26,7 +27,7 @@ class EachTile extends StatelessWidget {
             : Colors.transparent,
       ),
       child: ListTile(
-        onTap: () => Navigator.pushNamed(context, "home"),
+        onTap: () => Navigator.pushNamed(context, goTo),
         selected: select ?? false,
         selectedColor: or,
         iconColor: const Color.fromARGB(179, 255, 255, 255),

@@ -6,6 +6,11 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        foregroundColor: const Color.fromARGB(255, 57, 50, 50),
+        backgroundColor:const Color.fromARGB(255, 236, 98, 63),
+      ),
       body: Stack(
         children: [
           Column(
@@ -19,12 +24,12 @@ class RegisterScreen extends StatelessWidget {
               ),
               Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 567.4,
+                  height: 472,
                   color: const Color.fromARGB(255, 57, 50, 50)),
             ],
           ),
           Positioned(
-              top: 200,
+              top: 100,
               left: 50,
               right: 50,
               child: Column(
@@ -142,12 +147,15 @@ class RegisterScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                  height: 105,
+                  height: 100,
                 ),
-                const Text(
-                  "I have an account? Back to login ?",
-                  style: TextStyle(
-                      fontSize: 16, color: Color.fromARGB(200, 255, 255, 255)),
+                InkWell(
+                  onTap: () => Navigator.pushNamed(context, 'login'),
+                  child: const Text(
+                    "I have an account? Back to login?",
+                    style: TextStyle(
+                        fontSize: 16, color: Color.fromARGB(200, 255, 255, 255)),
+                  ),
                 ),
                 ],
               ))

@@ -3,6 +3,8 @@ import 'package:tassk_4_food_delivery/Widgets/appbar.dart';
 import 'package:tassk_4_food_delivery/Widgets/bottom_bar.dart';
 import 'package:tassk_4_food_delivery/Widgets/my_drawer.dart';
 
+import '../../generated/l10n.dart';
+
 class NotificationsScreen extends StatelessWidget {
   const NotificationsScreen({super.key});
 
@@ -11,7 +13,7 @@ class NotificationsScreen extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
           preferredSize: const Size.fromHeight(50),
-          child: CustomizedAppBar(title: "Notifications", bg: black,leadingIcon: Icons.shopping_cart,)),
+          child: CustomizedAppBar(title: S.of(context).Notifications, bg: black,leadingIcon: Icons.shopping_cart,)),
       body: Container(
         alignment: Alignment.center,
         child: Column(

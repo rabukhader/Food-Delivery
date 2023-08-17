@@ -4,5 +4,18 @@
     "subHeading1": "مرتبة حسب القرب",
     "heading2": "رائجة هذا الاسبوع",
     "subHeading2": "نقرتين على الطعام لاضافته الى سلتك",
-    "searchHint": "ابحث عن مطاعم او طعام"
+    "searchHint": "ابحث عن مطاعم او طعام",
+
+    "languageTitle": "اللغات",
+    "drawerTileGuest": "ضيف",
+    "drawerTileHome": "الصفحة الرئيسية",
+    "Notifications": "الإشعارات",
+    "drawerTileOrders": "طلباتي",
+    "drawerTileFavourite": "الأطعمة المفضلة",
+    "drawerBetweenTile": "مراجع التطبيق",
+    "drawerTileSupport": "المساعدة والدعم",
+    "drawerTileSettings": "الإعدادات",
+    "drawerTileLanguages": "اللغات",
+    "drawerTileMode": "الوضع النهاري",
+    "drawerTileLogin": "تسجيل الدخول"
 }

@@ -22,8 +22,24 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Notifications": MessageLookupByLibrary.simpleMessage("الإشعارات"),
+        "drawerBetweenTile":
+            MessageLookupByLibrary.simpleMessage("مراجع التطبيق"),
+        "drawerTileFavourite":
+            MessageLookupByLibrary.simpleMessage("الأطعمة المفضلة"),
+        "drawerTileGuest": MessageLookupByLibrary.simpleMessage("ضيف"),
+        "drawerTileHome":
+            MessageLookupByLibrary.simpleMessage("الصفحة الرئيسية"),
+        "drawerTileLanguages": MessageLookupByLibrary.simpleMessage("اللغات"),
+        "drawerTileLogin": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "drawerTileMode": MessageLookupByLibrary.simpleMessage("الوضع النهاري"),
+        "drawerTileOrders": MessageLookupByLibrary.simpleMessage("طلباتي"),
+        "drawerTileSettings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+        "drawerTileSupport":
+            MessageLookupByLibrary.simpleMessage("المساعدة والدعم"),
         "heading1": MessageLookupByLibrary.simpleMessage("أفضل المطاعم"),
         "heading2": MessageLookupByLibrary.simpleMessage("رائجة هذا الاسبوع"),
+        "languageTitle": MessageLookupByLibrary.simpleMessage("اللغات"),
         "searchHint":
             MessageLookupByLibrary.simpleMessage("ابحث عن مطاعم او طعام"),
         "subHeading1": MessageLookupByLibrary.simpleMessage("مرتبة حسب القرب"),

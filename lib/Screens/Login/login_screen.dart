@@ -6,6 +6,11 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        foregroundColor: const Color.fromARGB(255, 57, 50, 50),
+        backgroundColor:const Color.fromARGB(255, 236, 98, 63),
+      ),
       body: Stack(
         children: [
           Column(
@@ -14,17 +19,18 @@ class LoginScreen extends StatelessWidget {
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: 300,
+                height: 250,
                 color: const Color.fromARGB(255, 236, 98, 63),
               ),
               Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 567.4,
-                  color: const Color.fromARGB(255, 57, 50, 50)),
+                    width: MediaQuery.of(context).size.width,
+                    height: 522,
+                    color: const Color.fromARGB(255, 57, 50, 50)),
+              
             ],
           ),
           Positioned(
-            top: 200,
+            top: 120,
             left: 50,
             right: 50,
             child: Column(
@@ -133,20 +139,26 @@ class LoginScreen extends StatelessWidget {
                   ]),
                 ),
                 const SizedBox(
-                  height: 145,
+                  height: 130,
                 ),
-                const Text(
-                  "I forgot password ?",
-                  style: TextStyle(
-                      fontSize: 16, color: Color.fromARGB(200, 255, 255, 255)),
+                InkWell(
+                  onTap: ()=>Navigator.popAndPushNamed(context, 'reset_password'),
+                  child: Text(
+                    "I forgot password ?",
+                    style: TextStyle(
+                        fontSize: 16, color: Color.fromARGB(200, 255, 255, 255)),
+                  ),
                 ),
                 const SizedBox(
                   height: 25,
                 ),
-                const Text(
-                  "I don't have an account ?",
-                  style: TextStyle(
-                      fontSize: 16, color: Color.fromARGB(200, 255, 255, 255)),
+                InkWell(
+                  onTap: () => Navigator.pushNamed(context, 'register'),
+                  child: const Text(
+                    "I don't have an account ?",
+                    style: TextStyle(
+                        fontSize: 16, color: Color.fromARGB(200, 255, 255, 255)),
+                  ),
                 )
               ],
             ),

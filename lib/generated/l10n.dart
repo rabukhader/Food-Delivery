@@ -109,6 +109,126 @@ class S {
       args: [],
     );
   }
+
+  /// `Languages`
+  String get languageTitle {
+    return Intl.message(
+      'Languages',
+      name: 'languageTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Guest`
+  String get drawerTileGuest {
+    return Intl.message(
+      'Guest',
+      name: 'drawerTileGuest',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get drawerTileHome {
+    return Intl.message(
+      'Home',
+      name: 'drawerTileHome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notifications`
+  String get Notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'Notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Orders`
+  String get drawerTileOrders {
+    return Intl.message(
+      'My Orders',
+      name: 'drawerTileOrders',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favourite Foods`
+  String get drawerTileFavourite {
+    return Intl.message(
+      'Favourite Foods',
+      name: 'drawerTileFavourite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Application Preferences`
+  String get drawerBetweenTile {
+    return Intl.message(
+      'Application Preferences',
+      name: 'drawerBetweenTile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Help & Support `
+  String get drawerTileSupport {
+    return Intl.message(
+      'Help & Support ',
+      name: 'drawerTileSupport',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get drawerTileSettings {
+    return Intl.message(
+      'Settings',
+      name: 'drawerTileSettings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Languages`
+  String get drawerTileLanguages {
+    return Intl.message(
+      'Languages',
+      name: 'drawerTileLanguages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Light Mode`
+  String get drawerTileMode {
+    return Intl.message(
+      'Light Mode',
+      name: 'drawerTileMode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get drawerTileLogin {
+    return Intl.message(
+      'Login',
+      name: 'drawerTileLogin',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -118,6 +238,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
       Locale.fromSubtags(languageCode: 'ar'),
+      Locale.fromSubtags(languageCode: 'es'),
     ];
   }
 

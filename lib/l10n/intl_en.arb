@@ -4,6 +4,24 @@
     "subHeading1":"Orderd by Nearby first",
     "heading2":"Trending This Week",
     "subHeading2":"Double click on the food to add it to the cart",
-    "searchHint": "Search for Resturants or foods"
+    "searchHint": "Search for Resturants or foods",
+
+    "languageTitle": "Languages",
+
+    "drawerTileGuest":"Guest",
+    "drawerTileHome":"Home",
+    "Notifications":"Notifications",
+    "drawerTileOrders":"My Orders",
+    "drawerTileFavourite":"Favourite Foods",
+    "drawerBetweenTile": "Application Preferences",
+    "drawerTileSupport":"Help & Support ",
+    "drawerTileSettings":"Settings",
+    "drawerTileLanguages":"Languages",
+    "drawerTileMode":"Light Mode",
+    "drawerTileLogin":"Login"
+
+    
+
+
 
 }

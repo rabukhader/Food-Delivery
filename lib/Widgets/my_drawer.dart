@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tassk_4_food_delivery/Widgets/each_list_tile.dart';
+import 'package:tassk_4_food_delivery/generated/l10n.dart';
 
 import '../main.dart';
 
@@ -11,51 +12,72 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       backgroundColor: black,
       child: ListView(
-        
-        children:  const [
+        children: [
           EachTile(
             select: true,
             tileIcon: Icons.person,
-            tileHeader: "Guest",
+            tileHeader: S.of(context).drawerTileGuest,
+            goTo: '',
           ),
           EachTile(
-            tileHeader: "Home",
-            tileIcon: Icons.home,
-          ),
+              tileHeader: S.of(context).drawerTileHome,
+              tileIcon: Icons.home,
+              goTo: "/"),
           EachTile(
-            tileIcon: Icons.notification_add,
-            tileHeader: "Notifications",
-          ),
+              tileIcon: Icons.notification_add,
+              tileHeader: S.of(context).Notifications,
+              goTo: "notifications"),
           EachTile(
             tileIcon: Icons.medication_liquid,
-            tileHeader: "My Orders",
+            tileHeader: S.of(context).drawerTileOrders,
+            goTo: "",
           ),
           EachTile(
             tileIcon: Icons.heart_broken,
-            tileHeader: "Favourite Foods",
+            tileHeader: S.of(context).drawerTileFavourite,
+            goTo: "favourites",
           ),
           Padding(
-            padding: EdgeInsets.only(left: 15.0, right: 15, top: 8),
+            padding: const EdgeInsets.only(left: 15.0, right: 15, top: 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Application Preferences",
-                  style: TextStyle(color: Color.fromARGB(179, 255, 255, 255)),
+                  S.of(context).drawerBetweenTile,
+                  style: const TextStyle(
+                      color: Color.fromARGB(179, 255, 255, 255)),
                 ),
-                Icon(
+                const Icon(
                   Icons.remove,
                   color: Color.fromARGB(97, 255, 255, 255),
                 )
               ],
             ),
           ),
-          EachTile(tileIcon: Icons.help, tileHeader: "Help & Support"),
-          EachTile(tileIcon: Icons.settings, tileHeader: "Settings"),
-          EachTile(tileIcon: Icons.translate, tileHeader: "Languages"),
-          EachTile(tileIcon: Icons.mode_fan_off, tileHeader: "Light Mode"),
-          EachTile(tileIcon: Icons.login, tileHeader: "Login"),
-          Padding(
+          EachTile(
+            tileIcon: Icons.help,
+            tileHeader: S.of(context).drawerTileSupport,
+            goTo: "help",
+          ),
+          EachTile(
+            tileIcon: Icons.settings,
+            tileHeader: S.of(context).drawerTileSettings,
+            goTo: "settings",
+          ),
+          EachTile(
+            tileIcon: Icons.translate,
+            tileHeader: S.of(context).drawerTileLanguages,
+            goTo: "languages",
+          ),
+          EachTile(
+              tileIcon: Icons.mode_fan_off,
+              tileHeader: S.of(context).drawerTileMode,
+              goTo: "mode"),
+          EachTile(
+              tileIcon: Icons.login,
+              tileHeader: S.of(context).drawerTileLogin,
+              goTo: "login"),
+          const Padding(
             padding: EdgeInsets.only(left: 15.0, right: 15, top: 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

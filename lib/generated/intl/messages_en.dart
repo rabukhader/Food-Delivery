@@ -22,8 +22,24 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
+        "drawerBetweenTile":
+            MessageLookupByLibrary.simpleMessage("Application Preferences"),
+        "drawerTileFavourite":
+            MessageLookupByLibrary.simpleMessage("Favourite Foods"),
+        "drawerTileGuest": MessageLookupByLibrary.simpleMessage("Guest"),
+        "drawerTileHome": MessageLookupByLibrary.simpleMessage("Home"),
+        "drawerTileLanguages":
+            MessageLookupByLibrary.simpleMessage("Languages"),
+        "drawerTileLogin": MessageLookupByLibrary.simpleMessage("Login"),
+        "drawerTileMode": MessageLookupByLibrary.simpleMessage("Light Mode"),
+        "drawerTileOrders": MessageLookupByLibrary.simpleMessage("My Orders"),
+        "drawerTileSettings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "drawerTileSupport":
+            MessageLookupByLibrary.simpleMessage("Help & Support "),
         "heading1": MessageLookupByLibrary.simpleMessage("Top Resturant"),
         "heading2": MessageLookupByLibrary.simpleMessage("Trending This Week"),
+        "languageTitle": MessageLookupByLibrary.simpleMessage("Languages"),
         "searchHint": MessageLookupByLibrary.simpleMessage(
             "Search for Resturants or foods"),
         "subHeading1":
