@@ -25,7 +25,7 @@ class MainApp extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
-        initialRoute: '/',
+        initialRoute: 'my_order',
         routes: routes,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(scaffoldBackgroundColor: black),

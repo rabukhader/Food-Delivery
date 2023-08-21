@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
           Expanded(child: const SmallCardCarousel()),
         ],
       ),
-      bottomNavigationBar: const BottomBar(),
+      bottomNavigationBar: BottomBar(bg: black,),
       drawer: const MyDrawer()
     );
   }

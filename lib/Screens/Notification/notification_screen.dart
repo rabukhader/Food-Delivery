@@ -71,7 +71,7 @@ class NotificationsScreen extends StatelessWidget {
         ),
       ),
       drawer: const MyDrawer(),
-      bottomNavigationBar: const BottomBar(),
+      bottomNavigationBar: const BottomBar(bg: Colors.white,),
     );
   }
 }

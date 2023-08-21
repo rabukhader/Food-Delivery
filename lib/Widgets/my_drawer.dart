@@ -30,7 +30,7 @@ class MyDrawer extends StatelessWidget {
           EachTile(
             tileIcon: Icons.medication_liquid,
             tileHeader: S.of(context).drawerTileOrders,
-            goTo: "",
+            goTo: "my_order",
           ),
           EachTile(
             tileIcon: Icons.heart_broken,
